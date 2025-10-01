@@ -1,0 +1,8 @@
+services:
+  gem:
+    image: ruby:latest
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: bash
+    tty: true
