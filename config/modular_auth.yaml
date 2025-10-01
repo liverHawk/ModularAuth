@@ -1,0 +1,15 @@
+default: &default
+  secret_key: <%= ENV['MODULAR_AUTH_SECRET_KEY'] %>
+  session_timeout: 3600
+  log_level: info
+  modules:
+    password:
+      enabled: true
+
+development:
+  <<: *default
+  log_level: debug
+
+production:
+  <<: *default
+  log_level: warn

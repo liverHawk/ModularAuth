@@ -20,7 +20,7 @@
 ```
 lib/
 ├── app.rb                    # メインモジュール定義
-├── app/
+├── modular_auth/
 │   ├── version.rb           # バージョン情報
 │   ├── configuration.rb     # 設定管理
 │   ├── modules/             # 認証モジュール
